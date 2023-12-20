@@ -1,0 +1,32 @@
+.vision {
+  width: 90vw;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    mix-blend-mode: color-dodge;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 10vw;
+    // flex: 500px 1fr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: -10;
+  }
+
+  &__content p {
+    max-width: 300px;
+    margin-top: 20px;
+    line-height: 1.3;
+  }
+
+  &__content img {
+    max-width: 900px;
+    object-fit: contain;
+  }
+}

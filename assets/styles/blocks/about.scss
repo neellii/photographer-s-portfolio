@@ -1,0 +1,39 @@
+.about {
+  height: 100svh;
+  width: 100svw;
+  position: relative;
+
+  &__img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+}
+
+.whoam {
+  &__wrapper {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+  }
+
+  &__words {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__word {
+    display: none;
+  }
+}

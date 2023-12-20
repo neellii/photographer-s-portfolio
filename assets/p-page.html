@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer's Portfolio</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/blocks/p_page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a class="p-page__back-btn" onclick="goBack()">
+            <img src="./assets/img/arrow-left-s-line.svg" alt="back" />
+          </a>
+          <ul>
+            <li><a href="./index.html">about</a></li>
+            <li><a href="#">my projects</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="p-page">
+          <div class="p-page__text">
+            <p>project: "<span>Basics</span>"</p>
+            <p>for: "<span>Urban Verve</span>"</p>
+            <p>model: <span>Rachel Finn</span></p>
+            <p>
+              overview:
+              <span
+                >Through a collection of fashion photographs, this project
+                reflects the fusion of city life, contemporary style, and the
+                everyday elegance found in the streets.</span
+              >
+            </p>
+          </div>
+          <div class="p-page__images">
+            <img src="./assets/img/p/p-2.png" alt="2" />
+            <img src="./assets/img/p/p-3.png" alt="" />
+            <img src="./assets/img/p/p-4.png" alt="" />
+            <img src="./assets/img/p/p-6.png" alt="" />
+            <img src="./assets/img/p/p-7.png" alt="" />
+          </div>
+        </div>
+      </main>
+
+      <footer class="contacts">
+        <h2 class="contacts__title">Contact me</h2>
+
+        <div class="contacts__content">
+          <p>kaytlin.miao@gmail.com</p>
+          <p>+ 82 010 455 28</p>
+          <p>based in London</p>
+          <p>open for new projects</p>
+        </div>
+
+        <div class="socials">
+          <a href="#!"
+            ><img
+              class="socials__icon"
+              src="./assets/img/socials/behance-line.svg"
+              alt="behance"
+          /></a>
+
+          <a href="#!"
+            ><img
+              class="socials__icon"
+              src="./assets/img/socials/facebook-line.svg"
+              alt="facebook"
+          /></a>
+
+          <a href="#!"
+            ><img
+              class="socials__icon"
+              src="./assets/img/socials/instagram-line.svg"
+              alt="instagram"
+          /></a>
+
+          <a href="#!">
+            <img
+              class="socials__icon"
+              src="./assets/img/socials/linkedin-line.svg"
+              alt="linkedin"
+          /></a>
+
+          <a href="#!">
+            <img
+              class="socials__icon"
+              src="./assets/img/socials/whatsapp-line.svg"
+              alt="whatsapp"
+          /></a>
+
+          <a href="#!"
+            ><img
+              class="socials__icon"
+              src="./assets/img/socials/pinterest-line.svg"
+              alt="pinterest"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+
+        setTimeout(function () {
+          const section = document.getElementById("projects");
+          if (section) {
+            window.scrollTo(section);
+          }
+        }, 100);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.contacts {
+  &__title {
+    font-size: 90px;
+    text-align: center;
+  }
+
+  &__content p {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+
+.socials {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    color: $text-color;
+    transition: opacity 0.4s ease-in;
+  }
+
+  &__icon:hover {
+    opacity: 0.6;
+  }
+}

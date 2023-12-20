@@ -1,0 +1,117 @@
+@import "./reset.scss";
+@import "./vars.scss";
+@import "./blocks/about.scss";
+@import "./blocks/vision.scss";
+@import "./blocks/projects.scss";
+@import "./blocks/contacts.scss";
+@import "./media_query.scss";
+
+@font-face {
+  font-family: "AfrahDemo";
+  src: url("./../fonts/AfrahDemo.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("./../fonts/Kollektif-Italic.woff2") format("woff2");
+}
+
+body {
+  background-color: $back-color;
+  font-family: "Kollektif", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  color: $text-color;
+  font-family: "AfrahDemo", sans-serif;
+  font-size: 120px;
+}
+
+h3,
+h4 {
+  color: $text-color;
+  font-family: "AfrahDemo", sans-serif;
+  font-size: 35px;
+}
+
+p {
+  color: $text-color;
+}
+
+header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+  mix-blend-mode: difference;
+  overflow: hidden;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $text-color;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  column-gap: 60px;
+}
+
+nav ul li a {
+  color: $text-color;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 6px;
+  mix-blend-mode: difference;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  width: 6px;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    column-gap: 30px;
+  }
+}

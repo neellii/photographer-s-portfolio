@@ -1,0 +1,13 @@
+$back-color: #0b0b0b;
+$text-color: #fff;
+
+@mixin responsive($property, $minValue, $maxValue) {
+  #{$property}: calc(
+    (#{$minValue + px}) + ($maxValue - $minValue) *
+      ((100vw - 300px) / (1920 - 300))
+  );
+}
+
+.spacer {
+  height: 10vh;
+}
